@@ -1,17 +1,32 @@
+
 🚀 AWS Three-Tier Architecture using Terraform
 📌 Project Overview
 
 This project demonstrates a highly available, scalable, and production-style 3-tier architecture on AWS using Terraform (Infrastructure as Code).
 
 It automates the deployment of:
+=======
+📌 AWS Three-Tier Architecture using Terraform
+🚀 Project Overview
+
+This project demonstrates a highly available and scalable 3-tier architecture on AWS using Terraform (Infrastructure as Code).
+
+It includes:
+>>>>>>> a5fec0c (Add professional README for DevOps project)
 
 VPC networking
 Public subnets
 Application Load Balancer (ALB)
 Auto Scaling Group (ASG)
+
 EC2 instances running Apache web server
 🏗️ Architecture Diagram
 Users
+=======
+EC2 web servers running Apache
+🏗️ Architecture Diagram
+User
+ (Add professional README for DevOps project)
   ↓
 Application Load Balancer (ALB)
   ↓
@@ -34,6 +49,22 @@ Scaling	Auto Scaling Group
 OS	Ubuntu
 Web Server	Apache
 Version Control	Git & GitHub
+=======
+Apache Web Server (HTML response)
+⚙️ Tech Stack
+🟣 Terraform
+☁️ AWS (EC2, VPC, ALB, ASG, Target Group)
+🐧 Linux (Ubuntu)
+🌐 Apache Web Server
+🔧 Git & GitHub
+📦 Features
+Infrastructure as Code (IaC) using Terraform
+Auto Scaling for high availability
+Load balancing using ALB
+Secure VPC setup
+Scalable and production-style architecture
+Automated EC2 provisioning with user data script
+(Add professional README for DevOps project)
 📁 Project Structure
 aws-three-tier/
 │
@@ -70,6 +101,21 @@ Terraform installed (>= 1.0)
 Git installed
 🚀 Deployment Steps
 1. Clone Repository
+=======
+├── subnet.tf
+├── security-group.tf
+├── ec2.tf
+├── alb.tf
+├── target-group.tf
+├── listener.tf
+├── launch-template.tf
+├── autoscaling.tf
+├── backend.tf
+├── outputs.tf
+└── README.md
+🚀 How to Deploy
+1. Clone repo
+(Add professional README for DevOps project)
 git clone https://github.com/your-username/aws-three-tier-terraform.git
 cd aws-three-tier-terraform
 2. Initialize Terraform
@@ -79,6 +125,13 @@ terraform validate
 4. Plan Infrastructure
 terraform plan
 5. Apply Infrastructure
+=======
+3. Validate configuration
+terraform validate
+4. Plan infrastructure
+terraform plan
+5. Deploy infrastructure
+(Add professional README for DevOps project)
 terraform apply
 
 Type:
@@ -87,6 +140,9 @@ yes
 🌐 Access Application
 
 After successful deployment, get the ALB DNS:
+=======
+After deployment, get ALB DNS:
+(Add professional README for DevOps project)
 
 terraform output
 
@@ -119,10 +175,25 @@ Load balancing and traffic distribution (ALB)
 Auto Scaling concepts
 Terraform Infrastructure as Code
 Real-world DevOps deployment workflow
+=======
+You will see:
+
+AWS Three Tier Project - Auto Scaling
+🔥 Key Learning Outcomes
+AWS networking (VPC, Subnets, Routing)
+Load balancing with ALB
+Auto Scaling Group configuration
+Terraform state management
+Infrastructure automation
+Real-world DevOps workflow
+📸 Screenshot (Optional)
+
+Add your ALB working screenshot here
+
+(Add professional README for DevOps project)
 👨‍💻 Author
 
-Chandan M S
-
+Chandan M s
 GitHub: https://github.com/Chandanmsreddy
 
 📌 Project Status
