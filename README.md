@@ -1,78 +1,47 @@
+# 🚀 AWS Three-Tier Architecture using Terraform
 
-🚀 AWS Three-Tier Architecture using Terraform
-📌 Project Overview
+## 📌 Overview
 
-This project demonstrates a highly available, scalable, and production-style 3-tier architecture on AWS using Terraform (Infrastructure as Code).
+This project automates the deployment of a scalable and highly available AWS infrastructure using Terraform.
 
-It automates the deployment of:
-=======
-📌 AWS Three-Tier Architecture using Terraform
-🚀 Project Overview
+The architecture includes:
 
-This project demonstrates a highly available and scalable 3-tier architecture on AWS using Terraform (Infrastructure as Code).
+- VPC and Networking
+- Public Subnets
+- Application Load Balancer (ALB)
+- Auto Scaling Group (ASG)
+- EC2 Instances running Apache Web Server
 
-It includes:
->>>>>>> a5fec0c (Add professional README for DevOps project)
+---
 
-VPC networking
-Public subnets
-Application Load Balancer (ALB)
-Auto Scaling Group (ASG)
+## 🏗️ Architecture
 
-EC2 instances running Apache web server
-🏗️ Architecture Diagram
-Users
-=======
-EC2 web servers running Apache
-🏗️ Architecture Diagram
-User
- (Add professional README for DevOps project)
-  ↓
-Application Load Balancer (ALB)
-  ↓
-Auto Scaling Group (EC2 Instances)
-  ↓
-Apache Web Server (HTTP Response)
-☁️ AWS Architecture Flow
-User requests hit the Application Load Balancer
-ALB distributes traffic across EC2 instances
-EC2 instances are managed by Auto Scaling Group
-Apache web server serves the response
-⚙️ Tech Stack
-Layer	Technology
-Infrastructure as Code	Terraform
-Cloud Provider	AWS
-Compute	EC2
-Networking	VPC, Subnets, Route Tables
-Load Balancer	Application Load Balancer
-Scaling	Auto Scaling Group
-OS	Ubuntu
-Web Server	Apache
-Version Control	Git & GitHub
-=======
-Apache Web Server (HTML response)
-⚙️ Tech Stack
-🟣 Terraform
-☁️ AWS (EC2, VPC, ALB, ASG, Target Group)
-🐧 Linux (Ubuntu)
-🌐 Apache Web Server
-🔧 Git & GitHub
-📦 Features
-Infrastructure as Code (IaC) using Terraform
-Auto Scaling for high availability
-Load balancing using ALB
-Secure VPC setup
-Scalable and production-style architecture
-Automated EC2 provisioning with user data script
-(Add professional README for DevOps project)
-📁 Project Structure
+![Architecture Diagram](images/architecture-diagram.png)
+
+---
+
+## ⚙️ Technologies Used
+
+- Terraform
+- AWS EC2
+- AWS VPC
+- Application Load Balancer (ALB)
+- Auto Scaling Group (ASG)
+- Apache Web Server
+- Git & GitHub
+
+---
+
+## 📁 Project Structure
+
+```text
 aws-three-tier/
 │
 ├── provider.tf
 ├── vpc.tf
-├── internet-gateway.tf
 ├── subnet.tf
 ├── route-table.tf
+├── internet-gateway.tf
 ├── security-group.tf
 ├── ec2.tf
 ├── launch-template.tf
@@ -83,137 +52,90 @@ aws-three-tier/
 ├── backend.tf
 ├── outputs.tf
 └── README.md
-🚀 Features
-Infrastructure as Code using Terraform
-Highly available architecture (Multi-AZ ready)
-Auto Scaling for dynamic traffic handling
-Load balancing using ALB
-Secure VPC design
-Automated EC2 provisioning using user data script
-Production-style AWS deployment
-⚡ Prerequisites
+```
 
-Before running this project, ensure you have:
+---
 
-AWS Account
-AWS CLI configured
-Terraform installed (>= 1.0)
-Git installed
-🚀 Deployment Steps
-1. Clone Repository
-=======
-├── subnet.tf
-├── security-group.tf
-├── ec2.tf
-├── alb.tf
-├── target-group.tf
-├── listener.tf
-├── launch-template.tf
-├── autoscaling.tf
-├── backend.tf
-├── outputs.tf
-└── README.md
-🚀 How to Deploy
-1. Clone repo
-(Add professional README for DevOps project)
-git clone https://github.com/your-username/aws-three-tier-terraform.git
+## 🚀 Deployment Steps
+
+### Clone Repository
+
+```bash
+git clone git@github.com:Chandanmsreddy/aws-three-tier-terraform.git
 cd aws-three-tier-terraform
-2. Initialize Terraform
+```
+
+### Initialize Terraform
+
+```bash
 terraform init
-3. Validate Configuration
+```
+
+### Validate Configuration
+
+```bash
 terraform validate
-4. Plan Infrastructure
+```
+
+### Review Execution Plan
+
+```bash
 terraform plan
-5. Apply Infrastructure
-=======
-3. Validate configuration
-terraform validate
-4. Plan infrastructure
-terraform plan
-5. Deploy infrastructure
-(Add professional README for DevOps project)
+```
+
+### Deploy Infrastructure
+
+```bash
 terraform apply
+```
 
-Type:
+---
 
-yes
-🌐 Access Application
+## 🌐 Access the Application
 
-After successful deployment, get the ALB DNS:
-=======
-After deployment, get ALB DNS:
-(Add professional README for DevOps project)
+Retrieve the Load Balancer DNS:
 
+```bash
 terraform output
+```
 
-Open in browser:
+Open the ALB DNS URL in your browser.
 
-http://<ALB-DNS-NAME>
+---
 
-Expected Output:
+## ✨ Features
 
-AWS Three Tier Project - Auto Scaling
-🔁 Testing Auto Scaling
+- Infrastructure as Code (IaC)
+- High Availability Architecture
+- Auto Scaling Support
+- Load Balanced Traffic
+- Automated EC2 Provisioning
+- Scalable AWS Infrastructure
 
-To verify Auto Scaling:
+---
 
-Go to AWS EC2 Console
-Terminate one instance
-Wait 1–2 minutes
+## 📚 Learning Outcomes
 
-✔ New instance will automatically be created
-✔ Application remains available
+- AWS Networking Fundamentals
+- Terraform Resource Management
+- Load Balancer Configuration
+- Auto Scaling Implementation
+- Infrastructure Automation
+- DevOps Best Practices
 
-🔐 Security Design
-Public access only through ALB
-EC2 instances protected inside VPC
-Security Groups restrict traffic
-Scalable and secure cloud design
-📊 Key Learning Outcomes
-AWS networking fundamentals (VPC, Subnets, Routing)
-Load balancing and traffic distribution (ALB)
-Auto Scaling concepts
-Terraform Infrastructure as Code
-Real-world DevOps deployment workflow
-=======
-You will see:
+---
 
-AWS Three Tier Project - Auto Scaling
-🔥 Key Learning Outcomes
-AWS networking (VPC, Subnets, Routing)
-Load balancing with ALB
-Auto Scaling Group configuration
-Terraform state management
-Infrastructure automation
-Real-world DevOps workflow
-📸 Screenshot (Optional)
+## 👨‍💻 Author
 
-Add your ALB working screenshot here
+**Chandan M S**
 
-(Add professional README for DevOps project)
-👨‍💻 Author
-
-Chandan M s
 GitHub: https://github.com/Chandanmsreddy
 
-📌 Project Status
+---
 
-✔ Completed
-✔ Working
-✔ Scalable Architecture
-✔ DevOps Ready Project
+## 📌 Status
 
-🚀 Future Improvements (Optional)
-Add RDS Database (true 3-tier)
-Add CI/CD pipeline (GitHub Actions)
-Add HTTPS with SSL (ACM)
-Add monitoring with CloudWatch + SNS
-Move to private subnet architecture
-🎯 Done
-
-This README is now:
-✔ Clean
-✔ Structured
-✔ Professional
-✔ Interview-ready
-✔ GitHub-friendly
+✅ Completed  
+✅ Working  
+✅ GitHub Ready  
+✅ Resume Ready
