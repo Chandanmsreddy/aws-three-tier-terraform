@@ -13,9 +13,9 @@ The architecture includes:
 - EC2 Instances running Apache Web Server
 
 ---
-
 ## 🏗️ Architecture
 
+```text
                  Internet
                      │
                      ▼
@@ -34,9 +34,10 @@ The architecture includes:
           ▲                     ▲
           └──────────┬──────────┘
                      │
-          Auto Scaling Group (ASG)
+        Auto Scaling Group (ASG)
                      │
                     VPC
+```
 
 
 ---
