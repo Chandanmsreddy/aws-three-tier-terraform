@@ -16,7 +16,28 @@ The architecture includes:
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](images/architecture-diagram.png)
+                 Internet
+                     │
+                     ▼
+      ┌───────────────────────────┐
+      │ Application Load Balancer │
+      │           (ALB)           │
+      └───────────────────────────┘
+                     │
+          ┌──────────┴──────────┐
+          ▼                     ▼
+   ┌─────────────┐      ┌─────────────┐
+   │ EC2 Instance│      │ EC2 Instance│
+   │   Apache    │      │   Apache    │
+   │ Web Server  │      │ Web Server  │
+   └─────────────┘      └─────────────┘
+          ▲                     ▲
+          └──────────┬──────────┘
+                     │
+          Auto Scaling Group (ASG)
+                     │
+                    VPC
+
 
 ---
 
